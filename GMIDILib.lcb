@@ -118,7 +118,6 @@ public handler getGMIDINoteName(in pNum as Integer)
     return tNames[pNum]
 end handler
 
-
 public handler getGMIDIDrumKitNamesListCSV()
 	return "Standard Kit,2,3,4,5,6,7,8,Room Kit,10,11,12,13,14,15,16,Power Kit,18,19,20,21,22,23,24,Electronic Kit,"&\
       "TR-808 Kit,27,28,29,30,31,32,Jazz Kit,34,35,36,37,38,39,40,Brush Kit,42,43,44,45,46,47,48,Orchestra Kit,50,51,52,53,54,55,56,SoundFX Kit,"&\
@@ -140,7 +139,7 @@ end handler
 
 public handler getGMIDIDrumNoteNamesListCSV()
 	-- must add 1 to the Note Number to get the proper Name for a MIDI Note Number from this comma-sep list (Bass Drum 1 = Item 37 vs MIDI Number 36)
- 	return "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,"&\
+ 	return "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,High Q,Slap,Scratch Push,Scratch Pull,Sticks,Square Click,Metronome Click,Metronome Bell,"&\
       "Bass Drum 2,Bass Drum 1,Side Stick,Snare Drum 1,Hand Clap,Snare Drum 2,Low Tom 2,Closed Hi-hat,Low Tom 1,Pedal Hi-hat,Mid Tom 2,"&\
       "Open Hi-hat,Mid Tom 1,High Tom 2,Crash Cymbal 1,High Tom 1,Ride Cymbal 1,Chinese Cymbal,Ride Bell,Tambourine,Splash Cymbal,"&\
       "Cowbell,Crash Cymbal 2,Vibra Slap,Ride Cymbal 2,High Bongo,Low Bongo,Mute High Conga,Open High Conga,Low Conga,High Timbale,"&\
@@ -153,7 +152,7 @@ public handler getGMIDIDrumNoteName(in pNum as Integer)
 	variable tNames as List
 	variable tNameStr as String
 	add 1 to pNum
-	put "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,"&\
+	put "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,High Q,Slap,Scratch Push,Scratch Pull,Sticks,Square Click,Metronome Click,Metronome Bell,"&\
       "Bass Drum 2,Bass Drum 1,Side Stick,Snare Drum 1,Hand Clap,Snare Drum 2,Low Tom 2,Closed Hi-hat,Low Tom 1,Pedal Hi-hat,Mid Tom 2,"&\
       "Open Hi-hat,Mid Tom 1,High Tom 2,Crash Cymbal 1,High Tom 1,Ride Cymbal 1,Chinese Cymbal,Ride Bell,Tambourine,Splash Cymbal,"&\
       "Cowbell,Crash Cymbal 2,Vibra Slap,Ride Cymbal 2,High Bongo,Low Bongo,Mute High Conga,Open High Conga,Low Conga,High Timbale,"&\
@@ -166,7 +165,6 @@ end handler
       
 public handler getGMIDIControllerNamesListCSV()
 	-- must add 1 to the Controller Number to get the proper Name for a MIDI Note Number from this comma-sep list (Bass Drum 1 = Item 37 vs MIDI Number 36)
-
     return "Bank Select (coarse),Modulation Wheel (coarse),Breath controller (coarse),Foot Pedal (coarse),Undefined,"&\
    "Portamento Time (coarse),Data Entry (coarse),Volume (coarse),Balance (coarse),Undefined,Pan position (coarse),Expression (coarse),"&\
    "Effect Control 1 (coarse),Effect Control 2 (coarse),Undefined,Undefined,General Purpose Slider 1,General Purpose Slider 2,"&\
