@@ -9,6 +9,17 @@ This is General MIDI Utility library.
 **/
 
 /**
+Name: getGMIDISVGicon()
+Type: function
+Syntax: getGMIDISVGicon()
+Summary: Returns a General MIDI icon path string for use with the SVG Icon widget
+
+Example:
+	set the iconPath of widget "SVG Icon" to getGMIDISVGicon()
+
+Description:
+Returns a General MIDI icon path data as a string that can be used with the SVG Icon widget
+
 Name: getGMIDIInstrumentNamesListCSV
 Type: function
 Syntax: getGMIDIInstrumentNamesListCSV()
@@ -58,12 +69,19 @@ Takes an integer between 0 and 127 and returns and returns a string of containin
 
 library community.livecode.library.pgmcclernan.GMIDILib
 
-metadata version is "1.0.0"
+metadata version is "1.0.1"
 metadata author is "Paul G. McClernan"
 metadata title is "GM MIDI Lib"
 metadata svgicon is "M33.601,19.365h6.926v25.472h-6.926V19.365z M68.97,19.365h6.93v25.472h-6.93V19.365z M50.173,38.727h9.15V25.488H43.251 v-6.123l20.588-0.005c1.336,0,2.424,1.087,2.424,2.429l-0.006,20.626c0,1.347-1.082,2.428-2.43,2.428H43.251V28.984h6.922V38.727z  M28.459,19.36l-4.508,0.005H3.117v25.472h6.923V25.485h3.494v19.353h6.926V25.485h3.489v19.353h6.929l0.007-23.051 C30.888,20.447,29.803,19.36,28.459,19.36z M3.117,47.439h72.782v9.157H3.117V47.439z M8.722,11.893h4.519v4.793h-1.508 l-0.223-1.113c-0.573,0.544-1.404,1.347-3.376,1.347c-2.605,0-4.974-1.537-4.974-4.651c0-2.428,1.645-4.716,5.288-4.706 c3.317,0,4.628,1.77,4.746,2.999h-2.256c0-0.349-0.77-1.463-2.365-1.463c-1.611,0-3.105,0.915-3.105,3.193 c0,2.425,1.612,3.053,3.148,3.053c0.498,0,2.157-0.155,2.625-1.955H8.722V11.893z M23.353,9.37h-5.74v1.865h5.276v1.573h-5.276 v2.302h5.998v1.575h-8.213V7.799h7.955V9.37z M32.082,7.799h2.11v8.89h-2.264l-4.415-6.338h-0.029v6.338h-2.113v-8.89h2.381 l4.295,6.188h0.031L32.082,7.799L32.082,7.799z M44.345,9.37h-5.741v1.865h5.278v1.573h-5.278v2.302h5.999v1.575h-8.21V7.799h7.952 V9.37z M46.468,7.799h5.473c2.879,0,3.408,1.745,3.408,2.515c0,0.977-0.604,1.816-1.667,2.112c0.896,0.32,1.368,0.595,1.368,2.25 c0,1.303,0,1.622,0.48,1.771v0.239h-2.496c-0.146-0.421-0.236-0.883-0.236-1.797c0-1.211-0.09-1.682-1.764-1.682h-2.338v3.479 h-2.225V7.799H46.468z M51.339,11.711c1.181,0,1.744-0.335,1.744-1.214c0-0.47-0.258-1.163-1.58-1.163h-2.816v2.376L51.339,11.711 L51.339,11.711z M58.923,16.686h-2.387l3.864-8.89h2.601l3.822,8.89H64.36l-0.688-1.832h-3.998L58.923,16.686z M60.276,13.317h2.754 l-1.334-3.516H61.66L60.276,13.317z M70.546,15.073h5.387v1.615h-7.637v-8.89h2.25V15.073z"
 
-public handler getGMIDIInstrumentNamesListCSV()
+public handler getGMIDISVGicon() returns String
+ -- This SVG Path data can be used with the SVGicon widget 
+ -- set the iconPath of widget "SVG Icon" to getGMIDISVGicon() 
+ return "M33.601,19.365h6.926v25.472h-6.926V19.365z M68.97,19.365h6.93v25.472h-6.93V19.365z M50.173,38.727h9.15V25.488H43.251 v-6.123l20.588-0.005c1.336,0,2.424,1.087,2.424,2.429l-0.006,20.626c0,1.347-1.082,2.428-2.43,2.428H43.251V28.984h6.922V38.727z  M28.459,19.36l-4.508,0.005H3.117v25.472h6.923V25.485h3.494v19.353h6.926V25.485h3.489v19.353h6.929l0.007-23.051 C30.888,20.447,29.803,19.36,28.459,19.36z M3.117,47.439h72.782v9.157H3.117V47.439z M8.722,11.893h4.519v4.793h-1.508 l-0.223-1.113c-0.573,0.544-1.404,1.347-3.376,1.347c-2.605,0-4.974-1.537-4.974-4.651c0-2.428,1.645-4.716,5.288-4.706 c3.317,0,4.628,1.77,4.746,2.999h-2.256c0-0.349-0.77-1.463-2.365-1.463c-1.611,0-3.105,0.915-3.105,3.193 c0,2.425,1.612,3.053,3.148,3.053c0.498,0,2.157-0.155,2.625-1.955H8.722V11.893z M23.353,9.37h-5.74v1.865h5.276v1.573h-5.276 v2.302h5.998v1.575h-8.213V7.799h7.955V9.37z M32.082,7.799h2.11v8.89h-2.264l-4.415-6.338h-0.029v6.338h-2.113v-8.89h2.381 l4.295,6.188h0.031L32.082,7.799L32.082,7.799z M44.345,9.37h-5.741v1.865h5.278v1.573h-5.278v2.302h5.999v1.575h-8.21V7.799h7.952 V9.37z M46.468,7.799h5.473c2.879,0,3.408,1.745,3.408,2.515c0,0.977-0.604,1.816-1.667,2.112c0.896,0.32,1.368,0.595,1.368,2.25 c0,1.303,0,1.622,0.48,1.771v0.239h-2.496c-0.146-0.421-0.236-0.883-0.236-1.797c0-1.211-0.09-1.682-1.764-1.682h-2.338v3.479 h-2.225V7.799H46.468z M51.339,11.711c1.181,0,1.744-0.335,1.744-1.214c0-0.47-0.258-1.163-1.58-1.163h-2.816v2.376L51.339,11.711 L51.339,11.711z M58.923,16.686h-2.387l3.864-8.89h2.601l3.822,8.89H64.36l-0.688-1.832h-3.998L58.923,16.686z M60.276,13.317h2.754 l-1.334-3.516H61.66L60.276,13.317z M70.546,15.073h5.387v1.615h-7.637v-8.89h2.25V15.073z"
+end handler
+
+public handler getGMIDIInstrumentNamesListCSV() returns String
+    --- Item order corresponds to MIDI values +1 (1 to 128 v. MIDI 0 to 127)
 	return "Acoustic Grand Piano,Bright Acoustic Piano,Electric Grand Piano,Honky-tonk Piano,Rhodes Piano,Chorused Piano,"&\
       "Harpsichord,Clavinet,Celesta,Glockenspiel,Music Box,Vibraphone,Marimba,Xylophone,Tubular Bells,Dulcimer,Hammond Organ,Percussive Organ,"&\
       "Rock Organ,Church Organ,Reed Organ,Accordion,Harmonica,Tango Accordion,Acoustic Guitar (nylon),Acoustic Guitar (steel),Electric Guitar (jazz),"&\
@@ -78,67 +96,96 @@ public handler getGMIDIInstrumentNamesListCSV()
       "Steel Drums,Woodblock,Taiko Drum,Melodic Tom,Synth Drum,Reverse Cymbal,Guitar Fret Noise,Breath Noise,Seashore,Bird Tweet,Telephone Ring,Helicopter,Applause,Gunshot"
 end handler
 
-public handler getGMIDIInstrumentName(in pNum as Integer)
+public handler getGMIDIInstrumentNameListArray() returns List
+	variable tNames as List
+	variable tNameStr as String
+	put getGMIDIInstrumentNamesListCSV() into tNameStr
+    split tNameStr by "," into tNames
+	return tNames
+end handler
+
+public handler getGMIDIInstrumentName(in pNum as Integer) returns String
 	variable tNames as List
 	variable tNameStr as String
 	add 1 to pNum
-	put "Acoustic Grand Piano,Bright Acoustic Piano,Electric Grand Piano,Honky-tonk Piano,Rhodes Piano,Chorused Piano,"&\
-      "Harpsichord,Clavinet,Celesta,Glockenspiel,Music Box,Vibraphone,Marimba,Xylophone,Tubular Bells,Dulcimer,Hammond Organ,Percussive Organ,"&\
-      "Rock Organ,Church Organ,Reed Organ,Accordion,Harmonica,Tango Accordion,Acoustic Guitar (nylon),Acoustic Guitar (steel),Electric Guitar (jazz),"&\
-      "Electric Guitar (clean),Electric Guitar (muted),Overdriven Guitar,Distortion Guitar,Guitar Harmonics,Acoustic Bass,Electric Bass (finger),"&\
-      "Electric Bass (pick),Fretless Bass,Slap Bass1,Slap Bass2,Synth Bass1,Synth Bass2,Violin,Viola,Cello,Contrabass,Tremolo Strings,Pizzicato Strings,"&\
-      "Orchestral Harp,Timpani,String Ensemble1,String Ensemble2,SynthStrings1,SynthStrings2,Choir Aahs,Voice Oohs,Synth Voice,Orchestra Hit,"&\
-      "Trumpet,Trombone,Tuba,Muted Trumpet,French Horn,Brass Section,Synth Brass1,Synth Brass2,Soprano Sax,Alto Sax,Tenor Sax,Baritone Sax,Oboe,"&\
-      "English Horn,Bassoon,Clarinet,Piccolo,Flute,Recorder,Pan Flute,Bottle Blow,Shakuhachi,Whistle,Ocarina,Lead1 (square),Lead2 (sawtooth),"&\
-      "Lead3 (calliope lead),Lead 4 (chiff lead),Lead 5 (charang),Lead 6 (voice),Lead 7 (fifths),Lead 8 (bass + lead),Pad1 (new age),Pad2 (warm),"&\
-      "Pad3 (polysynth),Pad 4 (choir),Pad 5 (bowed),Pad 6 (metallic),Pad 7 (halo),Pad 8 (sweep),FX1 (rain),FX2 (soundtrack),FX3 (crystal),"&\
-      "FX 4 (atmosphere),FX 5 (brightness),FX 6 (goblins),FX 7 (echoes),FX 8 (sci-fi),Sitar,Banjo,Shamisen,Koto,Kalimba,Bagpipe,Fiddle,Shanai,Tinkle Bell,Agogo,"&\
-      "Steel Drums,Woodblock,Taiko Drum,Melodic Tom,Synth Drum,Reverse Cymbal,Guitar Fret Noise,Breath Noise,Seashore,Bird Tweet,Telephone Ring,Helicopter,Applause,Gunshot" into tNameStr
+	put getGMIDIInstrumentNamesListCSV() into tNameStr
     split tNameStr by "," into tNames
 	return tNames[pNum]
 end handler
 
-public handler getGMIDINoteNamesListCSV()
-	-- must add 1 to the Note Number to get the proper Name for a MIDI Note Number from this comma-sep list (Middle-C = Item 61 vs MIDI Number 60)
+public handler getGMIDINoteNamesListCSV() returns String
+	--- Item order corresponds to MIDI values +1 (1 to 128 v. MIDI 0 to 127), Middle-C = Item 61 vs MIDI Number 60
 	return  "C-1,C#-1,D-1,D#-1,E-1,F-1,F#-1,G-1,G#-1,A-1,A#-1,B-1,C0,C#0,D0,D#0,E0,F0,F#0,G0,G#0,A0,A#0,B0,"&\
             "C1,C#1,D1,D#1,E1,F1,F#1,G1,G#1,A1,A#1,B1,C2,C#2,D2,D#2,E2,F2,F#2,G2,G#2,A2,A#2,B2,C3,C#3,D3,D#3,E3,F3,F#3,G3,G#3,A3,A#3,B3,"&\
             "C4,C#4,D4,D#4,E4,F4,F#4,G4,G#4,A4,A#4,B4,C5,C#5,D5,D#5,E5,F5,F#5,G5,G#5,A5,A#5,B5,C6,C#6,D6,D#6,E6,F6,F#6,G6,G#6,A6,A#6,B6,"&\
             "C7,C#7,D7,D#7,E7,F7,F#7,G7,G#7,A7,A#7,B7,C8,C#8,D8,D#8,E8,F8,F#8,G8,G#8,A8,A#8,B8,C9,C#9,D9,D#9,E9,F9,F#9,G9"
 end handler
 
-public handler getGMIDINoteName(in pNum as Integer)
+public handler getGMIDINoteFlatsNamesListCSV() returns String
+	--- Item order corresponds to MIDI values +1 (1 to 128 v. MIDI 0 to 127), Middle-C = Item 61 vs MIDI Number 60	
+	return  "C-1,Db-1,D-1,Eb-1,E-1,F-1,Gb-1,G-1,Ab-1,A-1,Bb-1,B-1,C0,Db0,D0,Eb0,E0,F0,Gb0,G0,Ab0,A0,Bb0,B0,"&\
+            "C1,Db1,D1,Eb1,E1,F1,Gb1,G1,Ab1,A1,Bb1,B1,C2,Db2,D2,Eb2,E2,F2,Gb2,G2,Ab2,A2,Bb2,B2,C3,Db3,D3,Eb3,E3,F3,Gb3,G3,Ab3,A3,Bb3,B3,"&\
+            "C4,Db4,D4,Eb4,E4,F4,Gb4,G4,Ab4,A4,Bb4,B4,C5,Db5,D5,Eb5,E5,F5,Gb5,G5,Ab5,A5,Bb5,B5,C6,Db6,D6,Eb6,E6,F6,Gb6,G6,Ab6,A6,Bb6,B6,"&\
+            "C7,Db7,D7,Eb7,E7,F7,Gb7,G7,Ab7,A7,Bb7,B7,C8,Db8,D8,Eb8,E8,F8,Gb8,G8,Ab8,A8,Bb8,B8,C9,Db9,D9,Eb9,E9,F9,Gb9,G9"	
+end handler
+
+public handler getGMIDINoteNamesListArray(in pSharpsFlats) returns List
+	variable tNames as List
+	variable tNameStr as String
+	if pSharpsFlats is "flats" then 
+		put getGMIDINoteFlatsNamesListCSV() into tNameStr
+	else
+		put getGMIDINoteNamesListCSV() into tNameStr
+	end if
+    split tNameStr by "," into tNames
+    return tNames
+end handler
+
+public handler getGMIDINoteName(in pNum as Integer) returns String
 	variable tNames as List
 	variable tNameStr as String
 	add 1 to pNum
-	put "C-1,C#-1,D-1,D#-1,E-1,F-1,F#-1,G-1,G#-1,A-1,A#-1,B-1,C0,C#0,D0,D#0,E0,F0,F#0,G0,G#0,A0,A#0,B0,"&\
-            "C1,C#1,D1,D#1,E1,F1,F#1,G1,G#1,A1,A#1,B1,C2,C#2,D2,D#2,E2,F2,F#2,G2,G#2,A2,A#2,B2,C3,C#3,D3,D#3,E3,F3,F#3,G3,G#3,A3,A#3,B3,"&\
-            "C4,C#4,D4,D#4,E4,F4,F#4,G4,G#4,A4,A#4,B4,C5,C#5,D5,D#5,E5,F5,F#5,G5,G#5,A5,A#5,B5,C6,C#6,D6,D#6,E6,F6,F#6,G6,G#6,A6,A#6,B6,"&\
-            "C7,C#7,D7,D#7,E7,F7,F#7,G7,G#7,A7,A#7,B7,C8,C#8,D8,D#8,E8,F8,F#8,G8,G#8,A8,A#8,B8,C9,C#9,D9,D#9,E9,F9,F#9,G9" into tNameStr 
+	put getGMIDINoteNamesListCSV() into tNameStr 
     split tNameStr by "," into tNames
     return tNames[pNum]
 end handler
 
-public handler getGMIDIDrumKitNamesListCSV()
+public handler getGMIDINoteFlatName(in pNum as Integer) returns String
+	variable tNames as List
+	variable tNameStr as String
+	add 1 to pNum
+	put getGMIDINoteFlatsNamesListCSV() into tNameStr 
+    split tNameStr by "," into tNames
+    return tNames[pNum]
+end handler
+
+public handler getGMIDIDrumKitNamesListCSV() returns String
+    --- Item order corresponds to MIDI values +1 (1 to 128 v. MIDI's 0 to 127)
 	return "Standard Kit,2,3,4,5,6,7,8,Room Kit,10,11,12,13,14,15,16,Power Kit,18,19,20,21,22,23,24,Electronic Kit,"&\
       "TR-808 Kit,27,28,29,30,31,32,Jazz Kit,34,35,36,37,38,39,40,Brush Kit,42,43,44,45,46,47,48,Orchestra Kit,50,51,52,53,54,55,56,SoundFX Kit,"&\
       "58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,"&\
       "100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,MT-32 Kit"
 end handler
 
-public handler getGMIDIDrumKitName(in pNum as Integer)
+public handler getGMIDIDrumKitNamesListArray() returns List
+	variable tNames as List
+	variable tNameStr as String
+	put getGMIDIDrumKitNamesListCSV() into tNameStr
+	split tNameStr by "," into tNames
+    return tNames
+end handler
+
+public handler getGMIDIDrumKitName(in pNum as Integer) returns String
 	variable tNames as List
 	variable tNameStr as String
 	add 1 to pNum
-	put "Standard Kit,2,3,4,5,6,7,8,Room Kit,10,11,12,13,14,15,16,Power Kit,18,19,20,21,22,23,24,Electronic Kit,"&\
-      "TR-808 Kit,27,28,29,30,31,32,Jazz Kit,34,35,36,37,38,39,40,Brush Kit,42,43,44,45,46,47,48,Orchestra Kit,50,51,52,53,54,55,56,SoundFX Kit,"&\
-      "58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,"&\
-      "100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,MT-32 Kit" into tNameStr
+	put getGMIDIDrumKitNamesListCSV() into tNameStr
 	split tNameStr by "," into tNames
     return tNames[pNum]
 end handler
 
-public handler getGMIDIDrumNoteNamesListCSV()
-	-- must add 1 to the Note Number to get the proper Name for a MIDI Note Number from this comma-sep list (Bass Drum 1 = Item 37 vs MIDI Number 36)
+public handler getGMIDIDrumNoteNamesListCSV() returns String
+	--- Item order corresponds to MIDI values +1 (1 to 128 v. MIDI 0 to 127), Bass Drum 1 = Item 37 vs MIDI Number 36
  	return "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,High Q,Slap,Scratch Push,Scratch Pull,Sticks,Square Click,Metronome Click,Metronome Bell,"&\
       "Bass Drum 2,Bass Drum 1,Side Stick,Snare Drum 1,Hand Clap,Snare Drum 2,Low Tom 2,Closed Hi-hat,Low Tom 1,Pedal Hi-hat,Mid Tom 2,"&\
       "Open Hi-hat,Mid Tom 1,High Tom 2,Crash Cymbal 1,High Tom 1,Ride Cymbal 1,Chinese Cymbal,Ride Bell,Tambourine,Splash Cymbal,"&\
@@ -147,23 +194,25 @@ public handler getGMIDIDrumNoteNamesListCSV()
       "Low Wood Block,Mute Cuica,Open Cuica,Mute Triangle,Open Triangle,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,"&\
       "101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127"
 end handler
+     
+public handler getGMIDIDrumNoteNamesListArray() returns List
+	variable tNames as List
+	variable tNameStr as String
+	put getGMIDIDrumNoteNamesListCSV() into tNameStr
+	split tNameStr by "," into tNames
+    return tNames
+end handler	
       
-public handler getGMIDIDrumNoteName(in pNum as Integer)
+public handler getGMIDIDrumNoteName(in pNum as Integer) returns String
 	variable tNames as List
 	variable tNameStr as String
 	add 1 to pNum
-	put "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,High Q,Slap,Scratch Push,Scratch Pull,Sticks,Square Click,Metronome Click,Metronome Bell,"&\
-      "Bass Drum 2,Bass Drum 1,Side Stick,Snare Drum 1,Hand Clap,Snare Drum 2,Low Tom 2,Closed Hi-hat,Low Tom 1,Pedal Hi-hat,Mid Tom 2,"&\
-      "Open Hi-hat,Mid Tom 1,High Tom 2,Crash Cymbal 1,High Tom 1,Ride Cymbal 1,Chinese Cymbal,Ride Bell,Tambourine,Splash Cymbal,"&\
-      "Cowbell,Crash Cymbal 2,Vibra Slap,Ride Cymbal 2,High Bongo,Low Bongo,Mute High Conga,Open High Conga,Low Conga,High Timbale,"&\
-      "Low Timbale,High Agogo,Low Agogo,Cabasa,Maracas,Short Whistle,Long Whistle,Short Guiro,Long Guiro,Claves,High Wood Block,"&\
-      "Low Wood Block,Mute Cuica,Open Cuica,Mute Triangle,Open Triangle,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,"&\
-      "101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127" into tNameStr
+	put getGMIDIDrumNoteNamesListCSV() into tNameStr
 	split tNameStr by "," into tNames
     return tNames[pNum]
 end handler
       
-public handler getGMIDIControllerNamesListCSV()
+public handler getGMIDIControllerNamesListCSV() returns String
 	-- must add 1 to the Controller Number to get the proper Name for a MIDI Note Number from this comma-sep list (Bass Drum 1 = Item 37 vs MIDI Number 36)
     return "Bank Select (coarse),Modulation Wheel (coarse),Breath controller (coarse),Foot Pedal (coarse),Undefined,"&\
    "Portamento Time (coarse),Data Entry (coarse),Volume (coarse),Balance (coarse),Undefined,Pan position (coarse),Expression (coarse),"&\
@@ -183,26 +232,19 @@ public handler getGMIDIControllerNamesListCSV()
    "Mono Operation,Poly Operation"	
 end handler
 
-public handler getGMIDIControllerName(in pNum as Integer)
+public handler getGMIDIControllerNamesListArray() returns List
+	variable tNames as List
+	variable tNameStr as String
+	put getGMIDIControllerNamesListCSV() into tNameStr
+   	split tNameStr by "," into tNames
+    return tNames
+end handler
+
+public handler getGMIDIControllerName(in pNum as Integer) returns String
 	variable tNames as List
 	variable tNameStr as String
 	add 1 to pNum
-	put "Bank Select (coarse),Modulation Wheel (coarse),Breath controller (coarse),Foot Pedal (coarse),Undefined,"&\
-   "Portamento Time (coarse),Data Entry (coarse),Volume (coarse),Balance (coarse),Undefined,Pan position (coarse),Expression (coarse),"&\
-   "Effect Control 1 (coarse),Effect Control 2 (coarse),Undefined,Undefined,General Purpose Slider 1,General Purpose Slider 2,"&\
-   "General Purpose Slider 3,General Purpose Slider 4,Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,"&\
-   "Undefined,Undefined,Undefined,Undefined,Bank Select (fine),Modulation Wheel (fine),Breath controller (fine),Undefined,Foot Pedal (fine),"&\
-   "Portamento Time (fine),Data Entry (fine),Volume (fine),Balance (fine),Undefined,Pan position (fine),Expression (fine),Effect Control 1 (fine),"&\
-   "Effect Control 2 (fine),Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,"&\
-   "Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,Hold Pedal (on/off),Portamento (on/off),Sustenuto Pedal (on/off),"&\
-   "Soft Pedal (on/off),Legato Pedal (on/off),Hold 2 Pedal (on/off),Sound Variation,Sound Timbre,Sound Release Time,Sound Attack Time,"&\
-   "Sound Brightness,Sound Control 6,Sound Control 7,Sound Control 8,Sound Control 9,Sound Control 10,General Purpose Button 1 (on/off),"&\
-   "General Purpose Button 2 (on/off),General Purpose Button 3 (on/off),General Purpose Button 4 (on/off),Undefined,Undefined,Undefined,Undefined,"&\
-   "Undefined,Undefined,Undefined,Effects Level,Tremulo Level,Chorus Level,Celeste Level,Phaser Level,Data Button increment,Data Button decrement,"&\
-   "Non-registered Parameter (fine),Non-registered Parameter (coarse),Registered Parameter (fine),Registered Parameter (coarse),Undefined,Undefined,"&\
-   "Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,Undefined,"&\
-   "Undefined,Undefined,Undefined,All Sound Off,All Controllers Off,Local Keyboard (on/off),All Notes Off,Omni Mode Off,Omni Mode On,"&\
-   "Mono Operation,Poly Operation" into tNameStr
+	put getGMIDIControllerNamesListCSV() into tNameStr
    	split tNameStr by "," into tNames
     return tNames[pNum]
 end handler
