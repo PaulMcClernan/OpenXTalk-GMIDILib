@@ -1,9 +1,7 @@
 # community.livecode.library.GMIDILib
 LiveCode Builder Lib of General MIDI Utilities
 
-I've started this LiveCode builder library for General MIDI Utilities. Right now it only contains functions for converting some MIDI Numbers (0-127) into human readable names. I intend to expand it in the near furture. 
-
-NOTE: MIDI has no real flats or sharps, nor does most keyboard instrument tuning (since the harpsichord was invented?). In modern times you would probably need a fretless type string instrument (and superhuman pitch detection skill to actually know) to play the diffence between a sharp or a flat. The frequencies produced are actually somewhere between sharp and flat. MIDI (and Keyboard instrument tuning way before that) was designed that as well when the protocol was created back in the early 1980s.
+I've started this LiveCode builder library for General MIDI Utilities. Right now it only contains functions for converting some MIDI Numbers (0-127) into human readable names. I intend to expand it in the near furture.
 
 So far there are functions for:
 
@@ -18,3 +16,6 @@ GM2/GS Standard DrumKit Names
 DrumKit Drum Note Names (GM2/GS standard kit, I will add other GM2/GS kit variations in the future)
 
 Standard Controllers / Channel Mode Message Names
+
+NOTE:
+  MIDI has no real flats or sharps, nor does most keyboard instrument tuning (since the harpsichord was invented?). In modern times you would probably need a fretless type string instrument (and superhuman pitch detection skill to actually know) to play the diffence between a sharp or a flat. The frequencies produced are actually somewhere between sharp and flat. MIDI (and Keyboard instrument tuning way before that) protocols was designed that way back in the early 1980s. One could acheive the proper frequencies using MIDI pitchbend messages.
