@@ -3,7 +3,7 @@ LiveCode Builder Lib of General MIDI Utilities
 
 I've started this LiveCode builder library for General MIDI Utilities. Right now it only contains functions for converting some MIDI Numbers (0-127) into human readable names. I intend to expand it in the near furture.
 
-So far there are functions for:
+# So far there are functions for:
 
 Note Names with Sharps Only for "Keyboard Black Keys notes" (GM Standard: C4=60 C-1=0 vs Yamaha XG C3=60 C-2=0)
 
@@ -19,6 +19,5 @@ DrumKit Drum Note Names (GM2/GS standard kit, I will add other GM2/GS kit variat
 
 Standard Controllers / Channel Mode Message Names
 
-NOTE:
-
+# NOTE:
 MIDI has no real flats or sharps, nor does most keyboard instrument tuning (since the harpsichord was invented?). In modern times you would probably need a fretless type string instrument (and superhuman pitch detection skill to actually know) to play the diffence between a sharp or a flat. The frequencies produced are actually somewhere between sharp and flat. MIDI (and Keyboard instrument tuning way before that) protocols was designed that way back in the early 1980s. One could acheive the proper frequencies using MIDI pitchbend messages.
