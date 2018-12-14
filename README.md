@@ -1,4 +1,4 @@
-# LiveCode Library for General MIDI(GM)/General Standard(GS) Names and Numbers
+# LiveCode Library for General MIDI(GM) & General Standard(GS) Names and Numbers
 LiveCode Builder Lib of General MIDI Utilities
 
 I've started this LiveCode builder library for General MIDI Utilities. Right now it only contains functions for converting some MIDI Numbers (0-127) into human readable names. I intend to expand it in the near furture.
