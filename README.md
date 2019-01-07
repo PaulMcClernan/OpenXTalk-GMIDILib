@@ -15,7 +15,7 @@ GM2/GS standard Instrument Names
 
 GM2/GS Standard DrumKit Names
 
-DrumKit Drum Note Names (GM2/GS standard kit, I will add other GM2/GS kit variations in the future)
+DrumKit Drum Note Names (GM/GS standard kit only, I will add other GM2/GS kit variations in the future)
 
 Standard Controllers / Channel Mode Message Names
 
