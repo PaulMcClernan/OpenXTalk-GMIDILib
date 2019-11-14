@@ -67,7 +67,7 @@ Description:
 Takes an integer between 0 and 127 and returns and returns a string of containing the corresponding Note Name. Sharps names only for now.
 **/
 
-library community.livecode.library.pgmcclernan.GMIDILib
+library community.livecode.library.pgmcclernan.gmidilib
 
 metadata version is "1.0.1"
 metadata author is "Paul G. McClernan"
