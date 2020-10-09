@@ -1,0 +1,69 @@
+Name: getGMIDISVGicon()
+
+Type: function
+
+Syntax: getGMIDISVGicon()
+
+Summary: Returns a General MIDI icon path string for use with the SVG Icon widget
+
+Example: 	set the iconPath of widget "SVG Icon" to getGMIDISVGicon()
+
+Description: Returns a General MIDI icon path data as a string that can be used with the SVG Icon widget
+
+version: 1.0.1
+
+author: Paul G. McClernan
+
+Name: getGMIDIInstrumentNamesListCSV
+
+Type: function
+
+Syntax: getGMIDIInstrumentNamesListCSV()
+
+Summary: Returns a comma separated values (CSV) list of GM Instrument Names
+
+Example: 	put getGMIDIInstrumentNamesListCSV()
+
+Description: Returns a string that is a comma separated values (CSV) list of the 128 General MIDI Instrument Names
+
+Name: getGMIDIInstrumentName
+
+Type: function
+
+Syntax: getGMIDIInstrumentName(integer)
+
+Summary: Takes an integer between 0 and 127 and returns a string of the corresponding GM Instrument Name
+
+Example:
+put getGMIDIInstrumentNamesListCSV(0) -- returns "Acoustic Grand Piano"
+put getGMIDIInstrumentNamesListCSV(4) -- returns "Rhodes Piano"
+
+Description: Takes an integer between 0 and 127 and returns a string of containing the corresponding General MIDI Instrument Name.
+
+Name: getGMIDINoteNamesListCSV
+
+Type: function
+
+Syntax: getGMIDINoteNamesListCSV()
+
+Summary: Returns a comma separated values (CSV) list of GM MIDI Note Names
+
+Example: 	put getGMIDIInstrumentNamesListCSV()
+
+Description: Returns a string that is a comma separated values (CSV) list of the 128 MIDI Note Names from C-1 (0) to G9 (127). The list includes sharps names only for now.
+
+Name: getGMIDINoteName
+
+Type: function
+
+Syntax: getGMIDINoteName(integer)
+
+Summary: Takes an integer between 0 and 127 and returns a string of the corresponding MIDI Note Name
+
+Example:
+put getGMIDIInstrumentNamesListCSV(0) -- returns "Acoustic Grand Piano"
+put getGMIDIInstrumentNamesListCSV(4) -- returns "Rhodes Piano"
+
+Description: Takes an integer between 0 and 127 and returns and returns a string of containing the corresponding Note Name. Sharps names only for now.
+
+

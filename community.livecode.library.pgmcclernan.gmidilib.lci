@@ -1,0 +1,30 @@
+import module community.livecode.library.pgmcclernan.gmidilib
+  use com.livecode.arithmetic
+  use com.livecode.binary
+  use com.livecode.list
+  use com.livecode.logic
+  use com.livecode.string
+  use com.livecode.type
+  use com.livecode.typeconvert
+  use com.livecode.array
+  handler getGMIDISVGicon() returns String
+  handler getGMIDIBeatsPerMinuteToMillisecs(in pBPM as Number, in pMeasureDivision as optional Number) returns Number
+  handler getGMIDIInstrumentNamesListCSV() returns String
+  handler getGMIDIInstrumentNameListArray() returns List
+  handler getGMIDIInstrumentName(in pNum as Number) returns String
+  handler getGMIDINoteNamesListCSV() returns String
+  handler getGMIDINoteFlatsNamesListCSV() returns String
+  handler getGMIDINoteSharpsFlatsNamesListCSV() returns String
+  handler getGMIDINoteNamesListArray(in pSharpsFlats as optional any) returns List
+  handler getGMIDINoteName(in pNum as Number) returns String
+  handler getGMIDINoteFlatName(in pNum as Number) returns String
+  handler getGMIDIDrumKitNamesListCSV() returns String
+  handler getGMIDIDrumKitNamesListArray() returns List
+  handler getGMIDIDrumKitName(in pNum as Number) returns String
+  handler getGMIDIDrumNoteNamesListCSV() returns String
+  handler getGMIDIDrumNoteNamesListArray() returns List
+  handler getGMIDIDrumNoteName(in pNum as Number) returns String
+  handler getGMIDIControllerNamesListCSV() returns String
+  handler getGMIDIControllerNamesListArray() returns List
+  handler getGMIDIControllerName(in pNum as Number) returns String
+end module
