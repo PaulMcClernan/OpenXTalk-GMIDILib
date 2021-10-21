@@ -1,7 +1,7 @@
-# LiveCode Library for General MIDI(GM) & General Standard(GS) Names and Numbers
-LiveCode Builder Lib of General MIDI Utilities
+# OpenXTalk Library for General MIDI(GM) & General Standard(GS) Names and Numbers
+OXT Builder Lib of General MIDI Utilities
 
-I've started this LiveCode builder library for General MIDI Utilities. Right now it only contains functions for converting some MIDI Numbers (0-127) into human readable names. I intend to expand it in the near furture.
+I've started this Builder library for General MIDI Utilities. Right now it only contains functions for converting some MIDI Numbers (0-127) into human readable names. I intend to expand it in the near furture.
 
 # So far there are functions for:
 
