@@ -52,7 +52,7 @@ Example:
 	put getGMIDIInstrumentNamesListCSV()
 
 Description:
-Returns a string that is a comma separated values (CSV) list of the 128 MIDI Note Names from C-1 (0) to G9 (127). The list includes sharps names only for now.
+Returns a string that is a comma separated values (CSV) list of the 128 MIDI Note Names from C-1 (0) to G9 (127). The list includes sharps names only.
 
 Name: getGMIDINoteName
 Type: function
@@ -64,10 +64,10 @@ Example:
 	put getGMIDIInstrumentNamesListCSV(4) -- returns "Rhodes Piano"
 
 Description:
-Takes an integer between 0 and 127 and returns and returns a string of containing the corresponding Note Name. Sharps names only for now.
+Takes an integer between 0 and 127 and returns and returns a string of containing the corresponding Note Name. Sharps names only.
 **/
 
-library community.livecode.library.pgmcclernan.gmidilib
+library org.openxtalk.library.pgmcclernan.gmidilib
 
 metadata version is "1.0.1"
 metadata author is "Paul G. McClernan"
